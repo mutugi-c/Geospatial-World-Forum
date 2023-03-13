@@ -1,7 +1,7 @@
 :root {
     --color-primary: #272a31;
     --color-secondary: #ec5242;
-    --color-body: #d3d3d3;
+    --color-lightgray: #d3d3d3;
 }
 
 
@@ -116,5 +116,52 @@ nav {
 }
 
 .headline__location {
-    font-size: 1rem
+    font-size: 1rem;
+}
+
+/* Main section */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-primary);
+    color: var(--color-lightgray);
+    padding: 2rem 0.5rem;
+}
+
+.main__header {
+    margin-bottom: 1rem;
+}
+
+.main__bar {
+    background-color: var(--color-secondary);
+    display: block;
+    height: 1px;
+    margin-bottom: 2rem;
+    width: 3rem;
+}
+
+.main__events {
+    display: grid;
+    gap: 1rem;
+}
+
+.main__info {
+    align-items: center;
+    background-color: #3c3f46;
+    display: grid;
+    grid-template-columns: 10% 30% 60%;
+    padding: 1rem;
+}
+
+.main__heading {
+    color: var(--color-secondary);
+}
+
+/* Button */
+.btn {
+    background-color: var(--color-secondary);
+    color: var(--color-lightgray);
+    margin-top: 2.5rem;
+    padding: 0.8rem 2rem;
 }
