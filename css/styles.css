@@ -2,6 +2,7 @@
     --color-primary: #272a31;
     --color-secondary: #ec5242;
     --color-lightgray: #d3d3d3;
+    --color-lightergray: #fbfbfb;
 }
 
 
@@ -48,14 +49,10 @@ h2 {
 }
 
 /* NavBar */
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 nav {
     align-items: center;
+    background-color: var(--color-lightergray);
     display: flex;
     justify-content: space-between;
     height: 90px;
@@ -117,12 +114,12 @@ nav {
 
 /* Headline section */
 #headline {
+    background-color: var(--color-lightergray);
     padding: 1.5rem;
 }
 
 .headline__body {
-    padding: 0 0.5rem;
-    margin: 1.5rem 0;
+    padding: 1.5rem 0.5rem;
 }
 
 .headline__date {
@@ -287,4 +284,21 @@ footer {
     font-size: 1.2rem;
     font-weight: 900;
     line-height: 0.8;
+}
+
+/* About Page*/
+.about-container {
+    text-align: center;
+}
+
+.about--body {
+    background-color: #fff;
+}
+
+.about__mail {
+    color: var(--color-primary);
+    display: block;
+    font-weight: 900;
+    margin: 0.5rem 0 2rem;
+    text-decoration: underline;
 }
