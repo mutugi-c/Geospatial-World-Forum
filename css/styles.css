@@ -16,7 +16,68 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 /* Typography */
 body {
     font-family: 'Lato', sans-serif;
+}
+
+/* NavBar */
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    padding: 2rem;
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    top: 30px;
+    right: -100%;
+    transition: all 0.4s ease-in;
+}
+
+.nav__menu.active {
+    right: 50px;
+}
+
+.logo {
+    display: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.bar {
+    background-color: var(--color-primary);
+    display: block;
+    height: 4px;
+    margin: 5px auto;
+    width: 1.5rem;
+}
+
+.nav__campaign {
+    display: none;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
 }
