@@ -222,3 +222,36 @@ nav {
     margin: 1rem 0 1.5rem;
     width: 1rem;
 }
+
+/* Partners section */
+#partners {
+    align-items: center;
+    background: var(--color-primary);
+    color: var(--color-lightgray);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0.5rem;
+}
+
+.partners__header {
+    margin-bottom: 1rem;
+}
+
+.partners__bar {
+    background-color: var(--color-secondary);
+    display: block;
+    height: 1px;
+    margin-bottom: 2rem;
+    width: 3rem;
+}
+
+.partner__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.partner__item {
+    font-size: 1.5rem;
+}
