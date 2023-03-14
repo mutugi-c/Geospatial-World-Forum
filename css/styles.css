@@ -1,8 +1,10 @@
 :root {
   --color-primary: #272a31;
   --color-secondary: #ec5242;
+  --color-body: #515151;
   --color-lightgray: #d3d3d3;
   --color-lightergray: #fbfbfb;
+  --color-white: #fff;
 }
 
 *,
@@ -26,9 +28,10 @@ li {
 
 /* Typography */
 body {
-  color: var(--color-primary);
+  color: var(--color-body);
   font-family: "Lato", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -47,8 +50,18 @@ h2 {
   font-weight: 400;
 }
 
+h3 {
+  letter-spacing: -0.01em;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
 
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+
   h1 {
     font-size: 4rem;
   }
@@ -56,6 +69,11 @@ h2 {
   h2 {
     font-size: 2.5rem;
   }
+
+  h3 {
+    font-size: 1.875rem;
+  }
+
 }
 
 /* NavBar */
@@ -79,6 +97,7 @@ nav {
 
 .nav__link {
   color: var(--color-primary);
+  font-size: 0.875rem;
   font-weight: 800;
   transition: color 0.3s;
 }
@@ -95,9 +114,10 @@ nav {
 }
 
 .nav__campaign {
-  border: 4px solid var(--color-secondary);
+  border: 5px solid var(--color-secondary);
   color: var(--color-secondary);
   display: block;
+  font-size: 0.875rem;
   font-weight: 800;
   padding: 0.5rem;
   white-space: nowrap;
@@ -175,17 +195,21 @@ nav {
 }
 
 .headline__body {
-  border: 2px solid #fff;
+  border: 2px solid var(--color-white);
   padding: 1.5rem 0.5rem;
 }
 
 .headline__date {
-  color: var(--color-primary);
+  color: #595959;
   font-weight: 900;
+  letter-spacing: -0.08em;
 }
 
 .headline__location {
-  font-size: 1rem;
+  color: #868686;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 768px) {
@@ -197,7 +221,33 @@ nav {
   .headline__body {
     max-width: 70%;
   }
+
+  .headline__date {
+    letter-spacing: 0.04em;
+  }
+
+  .headline__location {
+    font-size: 1rem;
+  }
 }
+
+/* Spacing bars */
+.bar--primary {
+  background-color: #d9d9d9;
+  display: block;
+  height: 1.42px;
+  margin: 0.4rem 0 0.8rem;
+  width: 1.1rem;
+}
+
+.bar--secondary {
+  background-color: #A04038;
+  display: block;
+  height: 2px;
+  margin-bottom: 2rem;
+  width: 1.875rem;
+}
+
 
 /* Main section */
 #main {
@@ -211,14 +261,6 @@ nav {
 
 .main__header {
   margin-bottom: 1rem;
-}
-
-.main__bar {
-  background-color: var(--color-secondary);
-  display: block;
-  height: 1px;
-  margin-bottom: 2rem;
-  width: 3rem;
 }
 
 .main__events {
@@ -236,13 +278,30 @@ nav {
 
 .main__heading {
   color: var(--color-secondary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.main__details {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.375rem;
+}
+
+.main__link {
+  display: none;
 }
 
 .btn {
   background-color: var(--color-secondary);
   color: var(--color-lightgray);
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.01em;
   margin-top: 2.5rem;
-  padding: 0.8rem 2rem;
+  padding: 1.25rem 3.125rem;
 }
 
 
@@ -268,14 +327,27 @@ nav {
     border: 2px solid var(--color-lightergray);
   }
 
+  .main__heading {
+    font-size: 1.5rem;
+  }
+
+  .main__details {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+
   .btn {
     display: none;
   }
 
   .main__link {
     color: var(--color-lightergray);
+    display: block;
     font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
     margin: 4.375rem auto 0;
+    text-decoration: underline;
   }
 }
 
@@ -289,14 +361,6 @@ nav {
 
 .speakers__header {
   margin-bottom: 1rem;
-}
-
-.speakers__bar {
-  background-color: var(--color-secondary);
-  display: block;
-  height: 1px;
-  margin-bottom: 2rem;
-  width: 3rem;
 }
 
 .speakers__container {
@@ -318,21 +382,25 @@ nav {
 }
 
 .speaker__name {
-  font-weight: 900;
-  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
 }
 
 .speaker__summary {
   color: var(--color-secondary);
+  font-size: 0.625rem;
   font-style: italic;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 0.9rem;
 }
 
-.speaker__bar {
-  background-color: var(--color-lightgray);
-  display: block;
-  height: 1px;
-  margin: 1rem 0 1.5rem;
-  width: 1rem;
+.speaker__details {
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.875rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -344,6 +412,21 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .speaker__name {
+    font-size: 1.5rem;
+  }
+
+  .speaker__summary {
+    font-size: 0.9375rem;
+    line-height: 1.3rem;
+  }
+
+  .speaker__details {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
 }
 
 /* Partners section */
@@ -358,14 +441,6 @@ nav {
 
 .partners__header {
   margin-bottom: 1rem;
-}
-
-.partners__bar {
-  background-color: var(--color-secondary);
-  display: block;
-  height: 1px;
-  margin-bottom: 2rem;
-  width: 3rem;
 }
 
 .partner__list {
@@ -403,7 +478,7 @@ footer {
 }
 
 .about--body {
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .about__mail {
@@ -417,14 +492,6 @@ footer {
 /* Logo section */
 #about-logo {
   padding: 1.25rem 0.65rem;
-}
-
-.logo__bar {
-  background-color: #A04038;
-  display: block;
-  height: 1px;
-  margin: 1.25rem auto;
-  width: 3rem;
 }
 
 .logo__info {
@@ -468,7 +535,7 @@ footer {
 
 .summit__year,
 .summit__location {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .summit__year {
