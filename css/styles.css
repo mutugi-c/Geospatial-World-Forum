@@ -455,7 +455,7 @@ footer {
   gap: 1.3rem;
   justify-content: center;
   height: 182px;
-
+  width: 100%;
 }
 
 .summit__item1 {
@@ -474,4 +474,18 @@ footer {
 
 .summit__year {
   font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+  .summit__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .summit__item1,
+  .summit__item2 {
+    height: 236px;
+    max-width: 30%;
+  }
 }
