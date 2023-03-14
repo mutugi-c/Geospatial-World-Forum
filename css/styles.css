@@ -56,7 +56,6 @@ h3 {
   font-weight: 400;
 }
 
-
 @media screen and (min-width: 768px) {
   body {
     font-size: 0.875rem;
@@ -73,7 +72,6 @@ h3 {
   h3 {
     font-size: 1.875rem;
   }
-
 }
 
 /* NavBar */
@@ -184,7 +182,6 @@ nav {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-0.6rem) rotate(-45deg);
   }
-
 }
 
 /* Headline section */
@@ -241,13 +238,12 @@ nav {
 }
 
 .bar--secondary {
-  background-color: #A04038;
+  background-color: #a04038;
   display: block;
   height: 2px;
   margin-bottom: 2rem;
   width: 1.875rem;
 }
-
 
 /* Main section */
 #main {
@@ -303,7 +299,6 @@ nav {
   margin-top: 2.5rem;
   padding: 1.25rem 3.125rem;
 }
-
 
 @media screen and (min-width: 768px) {
   #main {
@@ -426,7 +421,6 @@ nav {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
-
 }
 
 /* Partners section */
@@ -525,12 +519,11 @@ footer {
 }
 
 .summit__item1 {
-  background-image: url('../images/summit_1.png');
-
+  background-image: url("../images/summit_1.png");
 }
 
 .summit__item2 {
-  background-image: url('../images/summit_1.png');
+  background-image: url("../images/summit_1.png");
 }
 
 .summit__year,
