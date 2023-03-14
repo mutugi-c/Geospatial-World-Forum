@@ -414,3 +414,20 @@ footer {
   margin: 0.5rem 0 2rem;
   text-decoration: underline;
 }
+
+/* Logo section */
+#about-logo {
+  padding: 1.25rem 0.65rem;
+}
+
+.logo__bar {
+  background-color: #A04038;
+  display: block;
+  height: 1px;
+  margin: 1.25rem auto;
+  width: 3rem;
+}
+
+.logo__info {
+  margin-bottom: 2rem;
+}
