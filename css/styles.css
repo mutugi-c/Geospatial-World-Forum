@@ -239,12 +239,45 @@ nav {
   color: var(--color-secondary);
 }
 
-/* Button */
 .btn {
   background-color: var(--color-secondary);
   color: var(--color-lightgray);
   margin-top: 2.5rem;
   padding: 0.8rem 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  #main {
+    height: 587px;
+    padding: 5.1875rem 13.375rem;
+  }
+
+  .main__events {
+    gap: 0.2rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .main__info {
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    transition: border 0.2s;
+  }
+
+  .main__info:hover {
+    border: 2px solid var(--color-lightergray);
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .main__link {
+    color: var(--color-lightergray);
+    font-size: 1.25rem;
+    margin: 4.375rem auto 0;
+  }
 }
 
 /* Speakers section */
