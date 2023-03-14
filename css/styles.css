@@ -110,6 +110,7 @@ nav {
 @media screen and (max-width: 768px) {
   nav {
     height: 90px;
+    justify-content: flex-start;
     padding: 2rem;
   }
 
@@ -132,9 +133,7 @@ nav {
   }
 
   .logo {
-    display: none;
-    font-size: 2rem;
-    font-weight: 600;
+    margin-left: 18%;
   }
 
   .bar {
