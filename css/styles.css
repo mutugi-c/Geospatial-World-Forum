@@ -56,6 +56,9 @@ nav {
   justify-content: space-between;
   height: 90px;
   padding: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav__menu {
@@ -114,6 +117,7 @@ nav {
 /* Headline section */
 #headline {
   background-color: var(--color-lightergray);
+  margin-top: 110px;
   padding: 1.5rem;
 }
 
