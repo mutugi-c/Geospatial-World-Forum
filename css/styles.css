@@ -431,3 +431,47 @@ footer {
 .logo__info {
   margin-bottom: 2rem;
 }
+
+/* Summits */
+#summits {
+  padding: 2rem 1.25rem;
+}
+
+.summits__info {
+  margin-bottom: 2.2rem;
+  padding: 0 0.5rem;
+}
+
+.summit__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.summit__item1,
+.summit__item2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  justify-content: center;
+  height: 182px;
+
+}
+
+.summit__item1 {
+  background-image: url('../images/summit_1.png');
+
+}
+
+.summit__item2 {
+  background-image: url('../images/summit_1.png');
+}
+
+.summit__year,
+.summit__location {
+  color: #fff;
+}
+
+.summit__year {
+  font-weight: 800;
+}
