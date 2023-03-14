@@ -336,6 +336,17 @@ nav {
   width: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  #speakers {
+    height: 923px;
+  }
+
+  .speakers__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* Partners section */
 #partners {
   align-items: center;
