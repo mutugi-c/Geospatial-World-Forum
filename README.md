@@ -22,7 +22,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio <a name="about-project"></a>
+# 📖 GIS DAY <a name="about-project"></a>
 
 **GIS Day** is a project to build online an website for a conference, Geospatial World Forum, in this case.
 
