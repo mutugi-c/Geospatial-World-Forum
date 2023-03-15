@@ -128,7 +128,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   nav {
-    height: 2.8%;
+    height: 90px;
     justify-content: flex-start;
     padding: 2rem;
   }
@@ -138,7 +138,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-bottom: 18rem;
+    padding: 2rem;
     position: fixed;
     top: 90px;
     right: -100%;
@@ -190,6 +190,11 @@ nav {
   background-color: var(--color-lightergray);
   margin-top: 110px;
   padding: 6.1rem 1.5rem 4.35rem;
+  transition: padding-top 0.3s;
+}
+
+#headline.active {
+  padding-top: 15rem;
 }
 
 .headline__body {
