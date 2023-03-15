@@ -1,4 +1,4 @@
-import speakersInfo from "./speakersInfo.js";
+import speakersInfo from './speakersInfo.js';
 
 document.querySelector('#speakers__container').innerHTML = speakersInfo.map(
   (info) => `
