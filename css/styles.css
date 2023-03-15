@@ -82,7 +82,7 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 75px;
-  padding: 0.75rem 14%;
+  padding: 0.75rem 12rem 0.75rem 20rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -90,8 +90,11 @@ nav {
 
 .nav__menu {
   display: flex;
-  gap: 20%;
   text-align: center;
+}
+
+.nav__item {
+  margin-right: 4rem;
 }
 
 .nav__link {
@@ -106,9 +109,10 @@ nav {
 }
 
 .logo {
-  font-size: 2rem;
+  color: var(--color-secondary);
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-right: 5%;
+  margin-right: 10%;
   white-space: nowrap;
 }
 
@@ -126,11 +130,60 @@ nav {
   display: none;
 }
 
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0.75rem 3rem 0.75rem 3rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    margin-right: 4rem;
+  }
+
+  .nav__item {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 0.75rem 5rem 0.75rem 5rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    margin-right: 4rem;
+  }
+
+  .nav__item {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0.75rem 3rem 0.75rem 3rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    margin-right: 4rem;
+  }
+
+  .nav__item {
+    margin-right: 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     height: 90px;
     justify-content: flex-start;
     padding: 2rem;
+  }
+
+  .logo {
+    margin-left: 25%;
   }
 
   .nav__menu {
@@ -149,10 +202,6 @@ nav {
 
   .nav__menu.active {
     right: 0;
-  }
-
-  .logo {
-    margin-left: 18%;
   }
 
   .bar {
