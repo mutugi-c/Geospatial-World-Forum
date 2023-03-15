@@ -269,7 +269,7 @@ nav {
 @media screen and (min-width: 768px) {
   #headline {
     height: 33%;
-    padding: 9rem 18rem;
+    padding: 9rem 12rem;
   }
 
   .headline__body {
@@ -282,6 +282,18 @@ nav {
 
   .headline__location {
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #headline {
+    padding: 9rem 14rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #headline {
+    padding: 9rem 18rem;
   }
 }
 
@@ -523,12 +535,17 @@ nav {
 }
 
 .partner__item {
-  font-size: 1.5rem;
+  color: #595959;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   #partners {
     height: 8.2%;
+  }
+
+  .partner__item {
+    font-size: 3rem;
   }
 }
 
@@ -548,7 +565,7 @@ footer {
   gap: 0.2rem;
   font-size: 1.2rem;
   font-weight: 900;
-  line-height: 0.8;
+  line-height: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -564,6 +581,7 @@ footer {
 
 .about--body {
   background-color: var(--color-white);
+  max-width: 100%;
 }
 
 .about__mail {
@@ -574,13 +592,29 @@ footer {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) {
+  .about--footer {
+    background-color: var(--color-primary);
+    color: var(--color-lightergray);
+    padding: 4rem 26rem;
+  }
+}
+
 /* Logo section */
 #about-logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   padding: 1.25rem 0.65rem;
 }
 
 .logo__info {
   margin-bottom: 2rem;
+}
+
+.logo__img {
+  height: 100px;
 }
 
 /* Summits */
