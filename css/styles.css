@@ -238,7 +238,7 @@ nav {
 #headline {
   background-color: var(--color-lightergray);
   background-image: url(../images/headline_bg.jpg);
-  margin-top: 110px;
+  margin-top: 90px;
   padding: 6.1rem 1.5rem 4.35rem;
   transition: padding-top 0.3s;
 }
@@ -270,6 +270,7 @@ nav {
 @media screen and (min-width: 768px) {
   #headline {
     height: 33%;
+    margin-top: 75px;
     padding: 9rem 12rem;
   }
 
