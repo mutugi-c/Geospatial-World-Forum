@@ -2,7 +2,7 @@ import speakersInfo from './speakersInfo.js';
 
 document.querySelector('#speakers__container').innerHTML = speakersInfo.map(
   (info) => `
-    <div class="speaker">
+    <article class="speaker">
     <img src=${info.Image} alt="Speaker's face" class="speaker__img" />
     <div class="speaker__body">
       <h4 class="speaker__name">${info.name}</h4>
@@ -14,6 +14,6 @@ document.querySelector('#speakers__container').innerHTML = speakersInfo.map(
         ${info.details}
       </p>
     </div>
-  </div> `,
+  </article> `,
 )
   .join('');
