@@ -376,10 +376,11 @@ nav {
   background-color: var(--color-secondary);
   color: var(--color-lightgray);
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.01em;
   margin-top: 2.5rem;
   padding: 1.25rem 3.125rem;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) {
