@@ -1,5 +1,7 @@
 <a name="readme-top"></a>
 
+![](/images/screenshot.png)
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -46,6 +48,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://mutugi-c.github.io/GIS-DAY/)
+- [Website description](https://www.loom.com/share/9f0775bb54844cac8a99654a34a77a94)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
