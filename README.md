@@ -30,9 +30,30 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- HTML
-- CSS
-- JavaScript
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Markup</summary>
+  <ul>
+    <li><a href="https://html5.org/">HTML5</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Styling</summary>
+  <ul>
+    <li><a href="https://www.css3.com/">CSS3</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Interaction</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+  </ul>
+</details>
 
 <!-- Features -->
 
@@ -72,6 +93,31 @@ Example commands:
  $ cd my-folder
  $ git clone git@github.com:mutugi-c/GIS-DAY.git
 ```
+
+### Install
+
+Install git to work on this project with:
+
+```sh
+   $ git config --global user.name "First Last"
+
+   $ git config --global user.email "example@example.com"
+```
+
+### Usage
+
+To run the project have Node.js installed, execute the following command:
+
+```sh
+  $ npm install http-server -g
+  $ http-server
+```
+
+Go to your browser and type localhost:8080. Your Application should run
+
+### Run tests
+
+To run tests, run the HTML document in Google Chrome and right-click the HTML element you want to inspect. Click on "Inspect" and you will have the tools to run, analyze, and even debug the code
 
 ### Deployment
 
@@ -133,7 +179,7 @@ If you like this project, give a ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Cindy Shin](https://www.behance.net/adagio07) the original author of the used design.
+I would like to thank [Cindy Shin](https://www.behance.net/adagio07), the original author of the used design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,7 +188,5 @@ I would like to thank [Cindy Shin](https://www.behance.net/adagio07) the origina
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
