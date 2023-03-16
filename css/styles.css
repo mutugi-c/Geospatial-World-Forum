@@ -328,6 +328,7 @@ nav {
 
 .main__header {
   margin-bottom: 1rem;
+  white-space: nowrap;
 }
 
 .main__events {
@@ -442,6 +443,7 @@ nav {
 
 .speakers__header {
   margin-bottom: 1rem;
+  white-space: nowrap;
 }
 
 #speakers__container {
