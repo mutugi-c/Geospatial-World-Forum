@@ -562,9 +562,10 @@ nav {
 /* Footer */
 footer {
   align-items: center;
+  background-color: var(--color-lightergray);
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 40% 55%;
+  grid-template-columns: 40% 60%;
   padding: 1.875rem 1.625rem;
 }
 
@@ -577,14 +578,24 @@ footer {
   line-height: 1.5rem;
 }
 
+.footer__addons {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   footer {
     height: 8.2%;
-    padding: 4rem 26rem;
+    grid-template-columns: 1fr 3fr;
+    padding: 4rem 13.8125rem;
   }
 
   .footer__ownership {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .footer__addons {
+    margin-top: 1.5625rem;
+    display: block;
   }
 }
 
@@ -611,6 +622,7 @@ footer {
     background-color: var(--color-primary);
     color: var(--color-lightergray);
     padding: 4rem 26rem;
+    text-align: left;
   }
 }
 
