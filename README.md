@@ -29,7 +29,7 @@
 
 # 📖 Geospatial World Forum <a name="about-project"></a>
 
-**Geospatial World Forum ** is a project to build online an website for a conference.
+**Geospatial World Forum is a project to build an online website for a conference.**
 
 ## 🛠 Built With <a name="built-with"></a>
 
