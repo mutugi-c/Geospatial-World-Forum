@@ -238,6 +238,9 @@ nav {
 #headline {
   background-color: var(--color-lightergray);
   background-image: url(../images/headline_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-top: 63px;
   padding: 6.1rem 1.5rem 4.35rem;
   transition: padding-top 0.3s;
@@ -339,6 +342,7 @@ nav {
 .main__info {
   align-items: center;
   background-color: #3c3f46;
+  border: 1px solid transparent;
   display: grid;
   gap: 0.725rem;
   grid-template-columns: 15% 25% 60%;
