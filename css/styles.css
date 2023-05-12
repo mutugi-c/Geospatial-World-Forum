@@ -342,6 +342,7 @@ nav {
 .main__info {
   align-items: center;
   background-color: #3c3f46;
+  border: 1px solid transparent;
   display: grid;
   gap: 0.725rem;
   grid-template-columns: 15% 25% 60%;
