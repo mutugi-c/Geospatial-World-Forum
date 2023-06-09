@@ -106,11 +106,16 @@ Install git to work on this project with:
 
 ### Usage
 
-To run the project have Node.js installed, execute the following command:
+To run the project have Node.js installed, and execute the following commands to install the webpack-cli (the tool used to run webpack on the command line) if it is not installed:
 
 ```sh
-  $ npm install http-server -g
-  $ http-server
+  $ npm install webpack webpack-cli --save-dev
+```
+You can also use live reloading with webpack-dev-server using the following commands to install the web server, and run it:
+
+```sh
+  $ npm install --save-dev webpack-dev-server
+  $ npm start
 ```
 
 ### Run tests
