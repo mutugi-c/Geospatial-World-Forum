@@ -113,8 +113,6 @@ To run the project have Node.js installed, execute the following command:
   $ http-server
 ```
 
-Go to your browser and type localhost:8080. Your Application should run
-
 ### Run tests
 
 To run tests, run the HTML document in Google Chrome and right-click the HTML element you want to inspect. Click on "Inspect" and you will have the tools to run, analyze, and even debug the code
